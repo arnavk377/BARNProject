@@ -185,6 +185,8 @@
 > Things to consider for improvement
 - Improve the styling and spacing of images and buttons
 - Make buttons more aesthetically pleasing
-- Use more lists, create a quiz of team names
+- Uses lists to show player stats
+- Manages complexity by storing stats for each player
+- The use would be to help people learn NFL statistics
 - Make sure each image will be same size on button click
 - Make code less repetitive, use loops
