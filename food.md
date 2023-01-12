@@ -23,7 +23,9 @@
     Lng: 64
     Fd: 80
     Fum: 0</td>
-    <td> - 2022-2023 Receiving Title</td>
+    <td> - 2022-2023 Receiving Title
+    - 3 pro bowl appearances in his first 3 seasons
+    - 1st round draft pick in the 2020 draft, selected with the 22nd pick</td>
   </tr>
   <tr>
     <td>Data Abstraction</td>
