@@ -25,7 +25,8 @@
     Fum: 0</td>
     <td> - 2022-2023 Receiving Title
     - 3 pro bowl appearances in his first 3 seasons
-    - 1st round draft pick in the 2020 draft, selected with the 22nd pick</td>
+    - 1st round draft pick in the 2020 draft, selected with the 22nd pick
+    - Went to college at LSU for 3 years before committing to the NFL draft</td>
   </tr>
   <tr>
     <td>Arnav</td>
@@ -38,7 +39,9 @@
     Lng: 48
     Fd: 38
     Fum: 1</td>
-    <td>This student met the requirements because they had all the necessary things such as two code segments and all of the details.</td>
+    <td> - Was an undrafted free agent in the 2019 draft and was signed by the Patriots
+    - Went to college at NC State for 3 years before declaring to the NFL draft
+    - </td>
   </tr>
   <tr>
     <td>Luke</td>
