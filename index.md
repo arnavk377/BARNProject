@@ -3,5 +3,5 @@
 
 ### Prayers for Damar Hamlin
 <div>
-    <img src="/images/hamlin.jpeg" alt="Field" style="width:100%">
+    <img src="{{ site.baseurl }}/images/hamlin.jpeg" alt="Field" style="width:100%">
 </div>
