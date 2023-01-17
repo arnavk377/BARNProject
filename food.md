@@ -54,12 +54,22 @@
     Lng: 45
     Fd: 57
     Fum: 1</td>
-    <td>I thought that they met the requirements with all of the work that they did but looking back at it, he didn't meet any of the requirements that was on the rubric.</td>
+    <td> - Smith holds the Alabama single-game receiving touchdowns record
+    - Smith was a five-star recruit
+    - Went to college at the University of Alabama</td>
   </tr>
   <tr>
     <td>Nico</td>
     <td>Josh Allen</td>
-    <td>1</td>
+    <td>Cmp: 359
+    Att: 567
+    Cmp %: 63.3
+    Yds: 4,283
+    Avg: 7.6
+    TD: 35
+    Int: 14
+    Lng: 98
+    Rtg: 96.6</td>
     <td>This student met the requirements because they had all the necessary things such as a student procedure and described the functionality of the procedure.</td>
   </tr>
 </table>
