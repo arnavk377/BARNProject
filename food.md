@@ -25,7 +25,7 @@
     Fum: 0</td>
     <td> - 2022-2023 Receiving Title
     - 3 pro bowl appearances in his first 3 seasons
-    - 1st round draft pick in the 2020 draft, selected with the 22nd pick
+    - 1st round draft pick in the 2020 draft, selected with the 22nd pick by the Minnesota Vikings
     - Went to college at LSU for 3 years before committing to the NFL draft</td>
   </tr>
   <tr>
@@ -41,7 +41,7 @@
     Fum: 1</td>
     <td> - Was an undrafted free agent in the 2019 draft and was signed by the Patriots
     - Went to college at NC State for 3 years before declaring to the NFL draft
-    - </td>
+    - Committed to NC State to play quarterback before switching to wide receiver</td>
   </tr>
   <tr>
     <td>Luke</td>
@@ -55,7 +55,7 @@
     Fd: 57
     Fum: 1</td>
     <td> - Smith holds the Alabama single-game receiving touchdowns record
-    - Smith was a five-star recruit
+    - Smith was a five-star recruit coming out of high school
     - Went to college at the University of Alabama</td>
   </tr>
   <tr>
@@ -70,6 +70,8 @@
     Int: 14
     Lng: 98
     Rtg: 96.6</td>
-    <td>This student met the requirements because they had all the necessary things such as a student procedure and described the functionality of the procedure.</td>
+    <td> - Went to JUCO at Reedley Community College after high school and then transferred to the University of Wyoming
+    - 1st round pick in the 2018 draft, selected with the 7th pick by the Buffalo Bills
+    - He is the first player in NFL history to throw for 4,000 yards and rush for 750 yards in a season</td>
   </tr>
 </table>
