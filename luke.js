@@ -1,11 +1,3 @@
-## Idea
-> Team location tracker
-- Tracks the location of a team based on a schedule
-- Stores the schedule in a list
-- Updates based on date and time
-
-
-<script>
 import React, {Component} from 'react';
 import axios from "axios";
 
@@ -88,4 +80,3 @@ handleChange = (event) => {
 }
 export default App;
 
-</script>
