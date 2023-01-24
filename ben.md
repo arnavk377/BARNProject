@@ -28,7 +28,7 @@
     -3 pro bowl appearances in his first 3 seasons
     -1st round draft pick in the 2020 draft, selected with the 22nd pick by the Minnesota Vikings
     -Went to college at LSU for 3 years before committing to the NFL draft</td>
-    <td>![]({{site.baseurl}}/images/jjettas.png "Justin Jefferson")</td>
+    <td>![](/images/jjettas.png)</td>
   </tr>
   <tr>
     <td>Arnav</td>
