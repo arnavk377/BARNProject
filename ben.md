@@ -5,6 +5,8 @@
 - Orders based on player league
 - Takes user input
 
+Put a picture of the nfl logo
+
 <table>
   <tr>
     <th>Person</th>
@@ -28,7 +30,7 @@
     -3 pro bowl appearances in his first 3 seasons
     -1st round draft pick in the 2020 draft, selected with the 22nd pick by the Minnesota Vikings
     -Went to college at LSU for 3 years before committing to the NFL draft</td>
-    <td>![](/images/jjettas.png)</td>
+    <td>![](/images/jjettas.png)</td> 
   </tr>
   <tr>
     <td>Arnav</td>
@@ -80,3 +82,5 @@
     <td>![]({{site.baseurl}}/images/joshallen.png "Josh Allen")</td>
   </tr>
 </table>
+
+![](/images/jjettas.png)
