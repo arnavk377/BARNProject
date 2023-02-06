@@ -6,7 +6,7 @@
         justify-content: center;
         align-items: center;
         height: 100px;
-        background-color: rgb(74, 52, 42);
+        background-color: lightblue;
       }
 
       .title {
@@ -16,29 +16,29 @@
         color: white;
       }
 
-      .subtabs {
+      .navbar {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        text-align: left;
         width: 200px;
-        background-color: rgb(37, 6, 6);
+        background-color: blue;
         color: white;
         padding: 20px;
       }
 
-      .subtab {
+      .nav-item {
         margin: 10px 0;
       }
     </style>
   </head>
   <body>
     <div class="banner">
-      <div class="title">My Website</div>
-      <div class="subtabs">
-        <div class="subtab">Home</div>
-        <div class="subtab">About</div>
-        <div class="subtab">Contact</div>
+      <div class="navbar">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">About</div>
+        <div class="nav-item">Contact</div>
       </div>
+      <div class="title">My Website</div>
     </div>
   </body>
 </html>
-
