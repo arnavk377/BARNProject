@@ -6,7 +6,7 @@
         justify-content: center;
         align-items: center;
         height: 100px;
-        background-color: lightblue;
+        background-color: rgb(51, 31, 31);
       }
 
       .title {
@@ -16,29 +16,31 @@
         color: white;
       }
 
-      .navbar {
-        display: flex;
-        flex-direction: row;
+      .table {
+        font-size: 12px;
+        font-weight: bold;
         text-align: left;
-        width: 200px;
-        background-color: blue;
-        color: white;
-        padding: 20px;
+        color: white
       }
 
-      .nav-item {
-        margin: 10px 0;
-      }
+
     </style>
   </head>
   <body>
     <div class="banner">
-      <div class="navbar">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">About</div>
-        <div class="nav-item">Contact</div>
-      </div>
-      <div class="title">My Website</div>
+      <div class="title">Barn Project</div>
+    </div>
+      <table>
+        <tr>  
+            <td><a href="{{ site.baseurl }}/">Home</a></td>
+            <td><a href="{{ site.baseurl }}/arnav">Arn</a></td>
+            <td><a href="{{ site.baseurl }}/ben">Ben</a></td>
+            <td><a href="{{ site.baseurl }}/nico">Nic</a></td>
+            <td><a href="{{ site.baseurl }}/luke">Rig</a></td>
+            <td><a href="{{ site.baseurl }}/manifesto">Man</a></td>
+            <td><a href="{{ site.baseurl }}/about">About</a></td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
