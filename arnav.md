@@ -2,20 +2,36 @@
 
 <div>
         <style>
-                p-image {
-                        display: 40%;
-                        margin: 25px;
+                .p-image {
+                        width: 50%;
+                        height: auto;
+                }
+                .p-row{
+                        display: flex;
+                }
+                .p-column{
+                        float: left;
+                        width: 45%;
+                        margin: 10px
                 }
         </style>
-        <p>Who has more</p>
-        <p>Receptions</p>
+        <p display="center">Who has more</p>
+        <p display="center">Receptions</p>
+        <br>
+        <div class="p-row">
+                <div class="p-column">
+                        <img class="p-image" id="lplayer" src="/images/ae.png" />
+                </div>
+                <div class="p-column">
+                        <img class="p-image" id="rplayer" src="/images/an.jpeg" />
+                </div>
+        </div>
 
 </div>
 
 ## Map of the NFL
 ![](/images/teamsmap.webp)
 > These are the locations of all 32 NFL teams on a map.
- 
 <div>
     <style>
         .image {
