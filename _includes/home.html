@@ -3,8 +3,6 @@
     <style>
       .banner {
         display: flex;
-        justify-content: center;
-        align-items: center;
         height: 100px;
         background-color: rgb(51, 31, 31);
       }
@@ -13,6 +11,8 @@
         font-size: 36px;
         font-weight: bold;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         color: white;
       }
 
@@ -28,9 +28,7 @@
   </head>
   <body>
     <div class="banner">
-      <div class="title">Barn Project</div>
-    </div>
-      <table>
+      <table position="left">
         <tr>  
             <td><a href="{{ site.baseurl }}/">Home</a></td>
             <td><a href="{{ site.baseurl }}/arnav">Arn</a></td>
@@ -41,6 +39,8 @@
             <td><a href="{{ site.baseurl }}/about">About</a></td>
         </tr>
       </table>
+      <div class="title">Barn Project</div>
+    
     </div>
   </body>
 </html>
