@@ -1,52 +1,44 @@
-<html lang="en">
-<head>
+<html>
+  <head>
+    <style>
+      .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(74, 52, 42);
+      }
 
-<style>
-/* Style the body */
-body {
-  font-family: 'Times New Roman', Times, serif;
-  margin: 0;
-}
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+      }
 
-a {
-    color: rgb(255, 255, 255);
-    text-align: center;
-  }
+      .subtabs {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        background-color: rgb(37, 6, 6);
+        color: white;
+        padding: 20px;
+      }
 
-/* Header/Logo Title */
-.header {
-  padding: 30px;
-  text-align: center;
-  background: rgb(43, 7, 7);
-  color: white;
-  font-size: 30px;
-}
-
-/* Page Content */
-.content {padding:20px;}
-</style>
-</head>
-<body>
-    
-<div class="header">
-  <h1>Barn Project</h1>
-  <p>
-    <table>
-    <tr>
-       
-        <td><a href="{{ site.baseurl }}/">Home</a></td>
-        <td><a href="{{ site.baseurl }}/arnav">Arnav's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/ben">Ben's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/nico">Nico's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/luke">Riggi's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/manifesto">Team Manifesto</a></td>
-        <td><a href="{{ site.baseurl }}/about">About Us</a></td>
-    </tr>
-    </table>
- </p>
-</div>
-
-
-
-</body>
+      .subtab {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="title">My Website</div>
+      <div class="subtabs">
+        <div class="subtab">Home</div>
+        <div class="subtab">About</div>
+        <div class="subtab">Contact</div>
+      </div>
+    </div>
+  </body>
 </html>
+
