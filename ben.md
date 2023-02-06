@@ -78,7 +78,7 @@ Put a picture of the nfl logo
   </tr>
 </table>
 
-![](/images/jjettas.png)
+![](/images/justinjefferson.png)
 ![](/images/jakobimeyers.png)
-![](/images/devontasmith.png)
-![](/images/joshallen.png)
+![](/images/devonta.png)
+![](/images/josha.png)
