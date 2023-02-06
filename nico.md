@@ -100,13 +100,4 @@
       ];
       
       
-      const quizQuestions = [];
-      const selectedQuestions = [];
-      while (quizQuestions.length < 2) {
-        let randomIndex = Math.floor(Math.random() * questions.length);
-        if (!selectedQuestions.includes(randomIndex)) {
-          quizQuestions.push(questions[randomIndex]);
-          selectedQuestions.push(randomIndex);
-        }
-      }
-      
+    
