@@ -1,11 +1,46 @@
-<table>
-    <tr>
-        <td><a href="{{ site.baseurl }}/">Home</a></td>
-        <td><a href="{{ site.baseurl }}/arnav">Arnav's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/ben">Ben's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/nico">Nico's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/luke">Riggi's Feature</a></td>
-        <td><a href="{{ site.baseurl }}/manifesto">Team Manifesto</a></td>
-        <td><a href="{{ site.baseurl }}/about">About Us</a></td>
-    </tr>
-</table>
+<html>
+  <head>
+    <style>
+      .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(51, 31, 31);
+      }
+
+      .title {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+      }
+
+      .table {
+        font-size: 12px;
+        font-weight: bold;
+        text-align: left;
+        color: white
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <div class="title">Barn Project</div>
+    </div>
+      <table>
+        <tr>  
+            <td><a href="{{ site.baseurl }}/">Home</a></td>
+            <td><a href="{{ site.baseurl }}/arnav">Arn</a></td>
+            <td><a href="{{ site.baseurl }}/ben">Ben</a></td>
+            <td><a href="{{ site.baseurl }}/nico">Nic</a></td>
+            <td><a href="{{ site.baseurl }}/luke">Rig</a></td>
+            <td><a href="{{ site.baseurl }}/manifesto">Man</a></td>
+            <td><a href="{{ site.baseurl }}/about">About</a></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
