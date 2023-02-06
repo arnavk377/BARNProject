@@ -5,8 +5,6 @@
 - Orders based on player league
 - Takes user input
 
-Put a picture of the nfl logo
-
 <table>
   <tr>
     <th>Person</th>
