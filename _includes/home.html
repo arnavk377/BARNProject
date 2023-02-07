@@ -1,5 +1,49 @@
 <html>
   <head>
+      <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(51, 31, 31);
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: rgb(51, 31, 31);
+      }
+    
+      </style>
+      </head>
+      <body>
+      
+      <ul>
+        <table>
+          <tr>  
+              <td><a href="{{ site.baseurl }}/">Home</a></td>
+              <td><a href="{{ site.baseurl }}/arnav">Arn</a></td>
+              <td><a href="{{ site.baseurl }}/ben">Ben</a></td>
+              <td><a href="{{ site.baseurl }}/nico">Nic</a></td>
+              <td><a href="{{ site.baseurl }}/luke">Rig</a></td>
+              <td><a href="{{ site.baseurl }}/manifesto">Man</a></td>
+              <td><a href="{{ site.baseurl }}/about">About</a></td>
+          </tr>
+        </table>
+      </ul>
+      
+      </body>
     <style>
       .banner {
         display: flex;
@@ -29,18 +73,5 @@
   <body>
     <div class="banner">
       <div class="title">Barn Project</div>
-    </div>
-      <table>
-        <tr>  
-            <td><a href="{{ site.baseurl }}/">Home</a></td>
-            <td><a href="{{ site.baseurl }}/arnav">Arn</a></td>
-            <td><a href="{{ site.baseurl }}/ben">Ben</a></td>
-            <td><a href="{{ site.baseurl }}/nico">Nic</a></td>
-            <td><a href="{{ site.baseurl }}/luke">Rig</a></td>
-            <td><a href="{{ site.baseurl }}/manifesto">Man</a></td>
-            <td><a href="{{ site.baseurl }}/about">About</a></td>
-        </tr>
-      </table>
-    </div>
-  </body>
+   
 </html>
