@@ -1,7 +1,37 @@
+## Higher Lower Game
+
+<div>
+        <style>
+                .p-image {
+                        width: 50%;
+                        height: auto;
+                }
+                .p-row{
+                        display: flex;
+                }
+                .p-column{
+                        float: left;
+                        width: 45%;
+                        margin: 10px
+                }
+        </style>
+        <p display="center">Who has more</p>
+        <p display="center">Receptions</p>
+        <br>
+        <div class="p-row">
+                <div class="p-column">
+                        <img class="p-image" id="lplayer" src="/images/ae.png" />
+                </div>
+                <div class="p-column">
+                        <img class="p-image" id="rplayer" src="/images/an.jpeg" />
+                </div>
+        </div>
+
+</div>
+
 ## Map of the NFL
 ![](/images/teamsmap.webp)
 > These are the locations of all 32 NFL teams on a map.
- 
 <div>
     <style>
         .image {
@@ -180,13 +210,3 @@
         }
     </script>
 </div>
-
-### Future Ideas
-> Things to consider for improvement
-- Improve the styling and spacing of images and buttons
-- Make buttons more aesthetically pleasing
-- Uses lists to show player stats
-- Manages complexity by storing stats for each player
-- The use would be to help people learn NFL statistics
-- Make sure each image will be same size on button click
-- Make code less repetitive, use loops

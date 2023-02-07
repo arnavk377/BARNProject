@@ -5,8 +5,6 @@
 - Orders based on player league
 - Takes user input
 
-Put a picture of the nfl logo
-
 <table>
   <tr>
     <th>Person</th>
@@ -74,8 +72,11 @@ Put a picture of the nfl logo
     Rtg: 96.6</td>
     <td> -Went to JUCO at Reedley Community College after high school and then transferred to the University of Wyoming
     -1st round pick in the 2018 draft, selected with the 7th pick by the Buffalo Bills
-    -He is the first player in NFL history to throw for 4,000 yards and rush for 750 yards in a season</td>
+    -He is the first player in NFL history to throw for 4,000 yards and rush for 750 yards in a single season</td>
   </tr>
 </table>
 
-![](/images/jjettas.png)
+![](/images/justinjefferson.png)
+![](/images/jakobi.png)
+![](/images/devonta.png)
+![](/images/josha.png)
