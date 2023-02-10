@@ -1,7 +1,7 @@
 <html>
   <head>
       <style>
-.title {
+.subtitle {
         font-size: 100px;
         font-weight: bold;
         text-align: center;
@@ -10,7 +10,7 @@
         color: white;
       }
 
-<div class="title">Sports Knowledge</div>
+<div class="subtitle">Sports Knowledge</div>
 
 
 <div>
