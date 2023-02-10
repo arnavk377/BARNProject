@@ -22,6 +22,6 @@
 
 
 <div>
-    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="centeyuvjh">
+    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="70%">
 </div>
 </html>
