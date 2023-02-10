@@ -10,9 +10,13 @@
         color: white;
       }
 
+ </style>
+</head>
+
 <div class="subtitle">Sports Knowledge</div>
 
 
 <div>
     <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="width:70">
 </div>
+</html>
