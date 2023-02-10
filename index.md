@@ -9,6 +9,11 @@
         align-items: center;
         color: black;
       }
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
  </style>
 </head>
@@ -17,6 +22,6 @@
 
 
 <div>
-    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="width:70%">
+    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="centeyuvjh">
 </div>
 </html>
