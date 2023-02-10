@@ -9,10 +9,6 @@
         align-items: center;
         color: black;
       }
-.img {
-  display: block;
-  margin-left: 400px;
-}
 
  </style>
 </head>
@@ -21,6 +17,6 @@
 
 
 <div>
-    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="70%">
+    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="100%">
 </div>
 </html>
