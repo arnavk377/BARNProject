@@ -7,7 +7,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: black;
       }
 
  </style>
@@ -17,6 +17,6 @@
 
 
 <div>
-    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="width:70">
+    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" style="width:70%">
 </div>
 </html>
