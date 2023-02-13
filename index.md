@@ -17,7 +17,7 @@
 
 
 <div>
-    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" width="400px" 
+    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" width="1000px" 
      height="500px">
 </div>
 </html>
