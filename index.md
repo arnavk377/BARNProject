@@ -9,6 +9,12 @@
         align-items: center;
         color: black;
       }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
  </style>
 </head>
@@ -17,7 +23,7 @@
 
 
 <div>
-    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" margin left="200px" width="1000px" 
+    <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" class="center" width="1000px" 
      height="500px">
 </div>
 </html>
