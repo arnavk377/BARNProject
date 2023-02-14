@@ -15,8 +15,48 @@
                         margin: 10px
                 }
         </style>
+        <script>
+        const apiurl = "http://barn.nighthawkcodingsociety.com/api/users/"
+        window.onload = APIsync()
+        function APIsync(){
+                fetch(apiurl)
+                .then(response => {
+                response.json().then(data => {
+                        console.log(data)
+                        console.log(data.results)
+                })
+        })
+        }
+        async function startGame() {
+                let players = [];
+                let score = 0;
+                let selectedStatistic = selectStatistic();
+        try {
+                let response = await fetch("http://10.8.134.71:8953/api/qbs");
+                let playerData = await response.json();
+                playerData.forEach(player => {
+                players.push(new Player(player));
+        });
+        while (true) {
+                let playersToChooseFrom = generatePlayers(players);
+                console.log("Player 1: " + playersToChooseFrom[0].name + ", " + selectedStatistic + ": " + playersToChooseFrom[0][selectedStatistic]);
+                console.log("Player 2: " + playersToChooseFrom[1].name + ", " + selectedStatistic + ": " + playersToChooseFrom[1][selectedStatistic]);
+                let playerChoice = prompt("Choose the player with a higher value of " + selectedStatistic + ": 1 or 2");
+                if (playersToChooseFrom[playerChoice - 1][selectedStatistic] > playersToChooseFrom[(playerChoice % 2)][selectedStatistic]) {
+                        console.log("Correct!");
+                        score++;
+                } else {
+                        console.log("Incorrect. The game is over. Your final score is " + score + ".");
+                        break;
+                }
+        }
+        } catch (error) {
+                console.error("An error occurred while trying to fetch player data: " + error);
+        }
+        }
+        </script>
         <p display="center">Who has more</p>
-        <p display="center">Receptions</p>
+        <p display="center" id="stat">Receptions</p>
         <br>
         <div class="p-row">
                 <div class="p-column">
