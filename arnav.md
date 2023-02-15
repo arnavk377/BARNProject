@@ -1,74 +1,127 @@
-## Higher Lower Game
-
 <div>
+        <head>
+                <meta charset="utf-8">
+                <title>Higher-Lower Game</title>
         <style>
-                .p-image {
-                        width: 50%;
-                        height: auto;
+                body {
+                        font-family: Arial, sans-serif;
+                        text-align: center;
                 }
-                .p-row{
+                h1 {
+                        margin-top: 20px;
+                }
+                .container {
                         display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 20px;
                 }
-                .p-column{
-                        float: left;
-                        width: 45%;
-                        margin: 10px
+                .player {
+                        margin: 10px;
+                        padding: 10px;
+                        border: 2px solid #ccc;
+                        border-radius: 5px;
+                        cursor: pointer;
+                }
+                .player-box {
+                display: inline-block;
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 10px;
+                text-align: center;
+                }
+                .player-img-container {
+                        width: 200px;
+                        height: 200px;
+                        margin-bottom: 10px;
+                }
+                .player-box p {
+                        font-size: 20px;
+                        font-weight: bold;
+                }
+                .selected {
+                        border-color: #4CAF50;
+                }
+                button {
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        cursor: pointer;
+                }
+                button:hover {
+                        background-color: #3e8e41;
                 }
         </style>
-        <script>
-        const apiurl = "http://barn.nighthawkcodingsociety.com/api/users/"
-        window.onload = APIsync()
-        function APIsync(){
-                fetch(apiurl)
-                .then(response => {
-                response.json().then(data => {
-                        console.log(data)
-                        console.log(data.results)
-                })
-        })
-        }
-        async function startGame() {
-                let players = [];
-                let score = 0;
-                let selectedStatistic = selectStatistic();
-        try {
-                let response = await fetch("http://10.8.134.71:8953/api/qbs");
-                let playerData = await response.json();
-                playerData.forEach(player => {
-                players.push(new Player(player));
-        });
-        while (true) {
-                let playersToChooseFrom = generatePlayers(players);
-                console.log("Player 1: " + playersToChooseFrom[0].name + ", " + selectedStatistic + ": " + playersToChooseFrom[0][selectedStatistic]);
-                console.log("Player 2: " + playersToChooseFrom[1].name + ", " + selectedStatistic + ": " + playersToChooseFrom[1][selectedStatistic]);
-                let playerChoice = prompt("Choose the player with a higher value of " + selectedStatistic + ": 1 or 2");
-                if (playersToChooseFrom[playerChoice - 1][selectedStatistic] > playersToChooseFrom[(playerChoice % 2)][selectedStatistic]) {
-                        console.log("Correct!");
-                        score++;
-                } else {
-                        console.log("Incorrect. The game is over. Your final score is " + score + ".");
-                        break;
-                }
-        }
-        } catch (error) {
-                console.error("An error occurred while trying to fetch player data: " + error);
-        }
-        }
-        </script>
-        <p display="center">Who has more</p>
-        <p display="center" id="stat">Receptions</p>
-        <br>
-        <div class="p-row">
-                <div class="p-column">
-                        <img class="p-image" id="lplayer" src="/images/ae.png" />
-                </div>
-                <div class="p-column">
-                        <img class="p-image" id="rplayer" src="/images/an.jpeg" />
-                </div>
-        </div>
+        </head>
+        <body>
+                <h1>Higher-Lower Game</h1>
+                <p>Click on the player you think has the higher statistic:</p>
+                <p id="stat"><p>
+		<div class="players">
+			<button class="player-box">
+				<img id="player1" src="" alt="Player 1">
+				<p id="player1-stat"></p>
+			</button>
+			<button class="player-box">
+				<img id="player2" src="" alt="Player 2">
+				<p id="player2-stat"></p>
+			</button>
+		</div>
+                <script>
+                        window.onload = fetchPlayers;
+                        async function fetchPlayers() {
+                        const response = await fetch('https://barn.nighthawkcodingsociety.com/api/users/');
+                        const data = await response.json();
+                        const players = data;
+                        const playerOne = players[Math.floor(Math.random() * players.length)];
+                        const playerTwo = players[Math.floor(Math.random() * players.length)];
+                        const statToCompare = ['atts', 'comps', 'tds', 'yards'][Math.floor(Math.random() * 4)];
+                        document.getElementById("stat").textContent = statToCompare;
+                        const buttonOne = document.createElement('button');
+                        buttonOne.type = 'button';
+                        buttonOne.addEventListener('click', () => {
+                                if (playerOne[statToCompare] > playerTwo[statToCompare]) {
+                                        alert('You Win!');
+                                } else {
+                                        alert('You Lose!');
+                                }
+                                fetchPlayers();
+                                });
+                        const imgOne = document.createElement('img');
+                        imgOne.src = playerOne.pimage;
+                        imgOne.alt = playerOne.name;
+                        buttonOne.appendChild(imgOne);
+                        const buttonTwo = document.createElement('button');
+                        buttonTwo.type = 'button';
+                                buttonTwo.addEventListener('click', () => {
+                                if (playerTwo[statToCompare] > playerOne[statToCompare]) {
+                                        alert('You Win!');
+                                } else {
+                                        alert('You Lose!');
+                                }
+                                fetchPlayers();
+                                });
+                        const imgTwo = document.createElement('img');
+                        imgTwo.src = playerTwo.pimage;
+                        imgTwo.alt = playerTwo.name;
+                        buttonTwo.appendChild(imgTwo);
+                        document.getElementById('player1').innerHTML = '';
+                        document.getElementById('player1').appendChild(buttonOne);
+                        document.getElementById('player2').innerHTML = '';
+                        document.getElementById('player2').appendChild(buttonTwo);
+    }
+</script>
 
+        </body>
 </div>
 
+<!--
 ## Map of the NFL
 ![](/images/teamsmap.webp)
 > These are the locations of all 32 NFL teams on a map.
@@ -95,14 +148,14 @@
         <button class="button" onclick="showae()" id="btnID"> AFC East </button>
         <button class="button" onclick="showaw()" id="btnID"> AFC West </button>
     </row>
-    <img class="image" src="/images/ae.png" id="aeid">
-    <img class="image" src="/images/as.png" id="asid">
-    <img class="image" src="/images/aw.jpeg" id="awid">
-    <img class="image" src="/images/an.jpeg" id="anid">
-    <img class="image" src="/images/ne.jpeg" id="neid">
-    <img class="image" src="/images/ns.png" id="nsid">
-    <img class="image" src="/images/nw.png" id="nwid">
-    <img class="image" src="/images/nn.png" id="nnid">
+    <img class="image" src="{{ site.baseurl }}/images/ae.png" id="aeid">
+    <img class="image" src="{{ site.baseurl }}/images/as.png" id="asid">
+    <img class="image" src="{{ site.baseurl }}/images/aw.jpeg" id="awid">
+    <img class="image" src="{{ site.baseurl }}/images/an.jpeg" id="anid">
+    <img class="image" src="{{ site.baseurl }}/images/ne.jpeg" id="neid">
+    <img class="image" src="{{ site.baseurl }}/images/ns.png" id="nsid">
+    <img class="image" src="{{ site.baseurl }}/images/nw.png" id="nwid">
+    <img class="image" src="{{ site.baseurl }}/images/nn.png" id="nnid">
     <script>
         function shownn() {
             document.getElementById('nnid')
@@ -250,3 +303,4 @@
         }
     </script>
 </div>
+-->
