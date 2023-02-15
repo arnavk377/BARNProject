@@ -118,8 +118,7 @@
     }
 </script>
 
-        </body>
-</div>
+
 
 <!--
 ## Map of the NFL
