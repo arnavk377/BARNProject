@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NFL Quiz</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="quiz-container">
+      <h1>NFL Quiz</h1>
+      <div id="question-container"></div>
+      <div id="answer-buttons-container"></div>
+      <button id="submit-button">Submit</button>
+      <div id="result-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
