@@ -24,4 +24,15 @@ const questions = [
       ],
     }
   ];
+
+function showQuestions() {
+    questionContainer.innerText = questions[0].question;
+    answerButtonsContainer.innerHTML = '';
+    questions[0].answers.forEach(answer => {
+        answerButtonsContainer.innerHTML += `<button>${answer.text}</button>`;
+    });
+}
+
+showQuestions();
+
   
