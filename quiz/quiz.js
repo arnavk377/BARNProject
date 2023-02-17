@@ -157,13 +157,11 @@ function finishQuiz() {
 
 function calculateScore() {
   let score = 0;
-  questions.forEach((question) => {
+  questions.forEach((question, index) => {
     const answerButtons = answerButtonsContainer.querySelectorAll(".answer-btn");
-    answerButtons.forEach((button) => {
-      if (button.dataset.correct === "true") {
-        if (question.answers.includes(button.innerText)) {
-          score++;
-        }
+    answerButtons.forEach(button => {
+      if (button.dataset.correct === "true" && question.answers.includes(button.innerText)) {
+        score++;
       }
     });
   });
