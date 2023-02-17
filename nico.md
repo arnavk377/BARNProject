@@ -42,6 +42,5 @@
         <!-- use Python code to retrieve the questions from the database -->
         {% for question in questions %}
             <div
-
-      
-    
+            
+        {% endfor %}
