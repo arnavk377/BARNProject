@@ -158,15 +158,18 @@ function finishQuiz() {
 function calculateScore() {
   let score = 0;
   questions.forEach((question, index) => {
-    const answerButtons = answerButtonsContainer.querySelectorAll(".answer-btn");
+    const answerButtons = document.querySelectorAll(`#answer-buttons-container${index} button`);
     answerButtons.forEach(button => {
-      if (button.dataset.correct === "true" && question.answers.includes(button.innerText)) {
-        score++;
+      if (button.classList.contains('selected')) {
+        if (question.answers.find(answer => answer.text === button.innerText).correct) {
+          score++;
+        }
       }
     });
   });
   return score;
 }
+
 
 showQuestions();
 submitButton.addEventListener("click", checkAnswers);
