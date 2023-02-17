@@ -1,103 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+    <title>NFL Quiz</title>
     <style>
-      #quiz-form {
-        width: 500px;
-        margin: 0 auto;
-        text-align: left;
-      }
-      .question {
-        font-weight: bold;
-        margin-top: 20px;
-      }
-      .options {
-        margin-left: 20px;
-      }
-      .options label {
-        display: block;
-        margin-bottom: 10px;
-      }
-      #submit-btn {
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: brown;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .results {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-      .correct {
-        color: green;
-      }
-      .incorrect {
-        color: red;
-      }
-    </style>
-  </head>
-  <body>
-    <form id="quiz-form">
-      <h1>NFL Quiz</h1>
-    </form>
-    <button id="submit-btn">Submit</button>
-    <div class="results"></div>
-    
-<script>
-      const questions = [
-        {
-          question: "Which NFL Logo is blue and red?",
-          options: [
-            "Jaguars",
-            "Falcons",
-            "Bills",
-            "Eagles"
-          ],
-          answer: "Bills"
-        },
-        {
-          question: "Which NFL logo has an arrowhead?",
-          options: [
-            "Steelers",
-            "Chiefs",
-            "Chargers",
-            "Patriots"
-          ],
-          answer: "Cheifs"
-        },
-        {
-          question: "Which NFL logo is similar to a lighting bolt?",
-          options: [
-            "Jets",
-            "Buccaneers",
-            "Raiders",
-            "Cowboys"
-          ],
-          answer: "Chargers"
-        },
-        {
-          question: "Which NFL logo is just a c?",
-          options: [
-            "Dolphins",
-            "Packers",
-            "Cardinals",
-            "Bears"
-          ],
-          answer: "Bears"
-        },
-        {
-          question: "Which NfL logo has bullhorns?",
-          options: [
-            "Texans",
-            "Seahawks",
-            "Titans",
-            "Browns"
-          ],
-          answer: "Texans"
+        /* add some styles to make the quiz look nice */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
         }
-      ];
-      
+        h1 {
+            text-align: center;
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .options input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>NFL Quiz</h1>
+    <form action="#" method="post">
+        <!-- use Python code to retrieve the questions from the database -->
+        {% for question in questions %}
+            <div
+
       
     
