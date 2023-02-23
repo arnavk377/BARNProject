@@ -20,17 +20,19 @@
                 .player {
                         margin: 10px;
                         padding: 10px;
+                        width: 200px;
+                        height: 200px;
                         border: 2px solid #ccc;
                         border-radius: 5px;
                         cursor: pointer;
                 }
                 .player-box {
-                display: inline-block;
-                margin: 10px;
-                padding: 10px;
-                border: 2px solid black;
-                border-radius: 10px;
-                text-align: center;
+                        display: inline-block;
+                        margin: 10px;
+                        padding: 10px;
+                        border: 2px solid black;
+                        border-radius: 10px;
+                        text-align: center;
                 }
                 .player-img-container {
                         width: 200px;
@@ -57,6 +59,14 @@
                 button:hover {
                         background-color: #3e8e41;
                 }
+                .score-box {
+                        display: inline-block;
+                        margin: 10px;
+                        padding: 10px;
+                        border: 2px solid black;
+                        border-radius: 10px;
+                        text-align: center;
+                }
         </style>
         </head>
         <body>
@@ -73,8 +83,13 @@
 				<p id="player2-stat"></p>
 			</button>
 		</div>
+                <div>
+                        <button class="score-box">
+                                <p>Your Score</p>
+                                <p id="score"></p>
                 <script>
                         window.onload = fetchPlayers;
+                        let score = 0;
                         async function fetchPlayers() {
                         const response = await fetch('https://barn.nighthawkcodingsociety.com/api/users/');
                         const data = await response.json();
@@ -83,12 +98,15 @@
                         const playerTwo = players[Math.floor(Math.random() * players.length)];
                         const statToCompare = ['atts', 'comps', 'tds', 'yards'][Math.floor(Math.random() * 4)];
                         document.getElementById("stat").textContent = statToCompare;
+                        document.getElementById("score").textContent = score;
                         const buttonOne = document.createElement('button');
                         buttonOne.type = 'button';
                         buttonOne.addEventListener('click', () => {
                                 if (playerOne[statToCompare] > playerTwo[statToCompare]) {
+                                        ++score;
                                         alert('You Win!');
                                 } else {
+                                        score = 0;
                                         alert('You Lose!');
                                 }
                                 fetchPlayers();
@@ -101,8 +119,10 @@
                         buttonTwo.type = 'button';
                                 buttonTwo.addEventListener('click', () => {
                                 if (playerTwo[statToCompare] > playerOne[statToCompare]) {
+                                        ++score;
                                         alert('You Win!');
                                 } else {
+                                        score = 0;
                                         alert('You Lose!');
                                 }
                                 fetchPlayers();
