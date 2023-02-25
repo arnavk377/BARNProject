@@ -1,7 +1,7 @@
 ## Favorite Players Table
 <meta charset="UTF-8">
 <h3>List your favorite players here!</h3>
-<br>
+<h3>Current Table</h3>
 <style>
     table, th, td, tr {
         border: 1px solid black;
@@ -25,7 +25,7 @@
   </tbody>
 </table>
 
-<h3>Add your favorite players to the table!</h3>
+<h3 style="color:#784518;">Add your favorite players to the table!</h3>
 
 <form action="javascript:create_player()">
     <p><label>
