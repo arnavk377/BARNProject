@@ -110,7 +110,7 @@
     //Validate Password (must be 6-20 characters in len)
     //verifyPassword("click");
     const body = {
-        uid: document.getElementById("user").value,
+        user: document.getElementById("user").value,
         player: document.getElementById("player").value,
         position: document.getElementById("position").value,
         team: document.getElementById("team").value,
