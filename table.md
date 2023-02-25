@@ -1,5 +1,15 @@
-## Player List
-
+## Favorite Players Table
+<meta charset="UTF-8">
+<h3>List your favorite players here!</h3>
+<br>
+<style>
+    table, th, td, tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 8px
+    }
+</style>    
 <table>
   <thead>
   <tr>
@@ -15,7 +25,7 @@
   </tbody>
 </table>
 
-<h1>Create API</h1>
+<h3>Add your favorite players to the table!</h3>
 
 <form action="javascript:create_player()">
     <p><label>
@@ -44,7 +54,7 @@
     <p>
         <button>Create</button>
     </p>
-</form>
+
 
 <script>
   // prepare HTML result container for new output

@@ -96,6 +96,9 @@
                         const players = data;
                         const playerOne = players[Math.floor(Math.random() * players.length)];
                         const playerTwo = players[Math.floor(Math.random() * players.length)];
+                        if (playerOne === playerTwo) {
+                                playerTwo = players[Math.floor(Math.random() * players.length)];
+                                }
                         const statToCompare = ['atts', 'comps', 'tds', 'yards'][Math.floor(Math.random() * 4)];
                         document.getElementById("stat").textContent = statToCompare;
                         document.getElementById("score").textContent = score;
@@ -104,10 +107,10 @@
                         buttonOne.addEventListener('click', () => {
                                 if (playerOne[statToCompare] > playerTwo[statToCompare]) {
                                         ++score;
-                                        alert('You Win!');
+                                        alert('Score +1');
                                 } else {
                                         score = 0;
-                                        alert('You Lose!');
+                                        alert('Game Over!');
                                 }
                                 fetchPlayers();
                                 });
@@ -120,10 +123,10 @@
                                 buttonTwo.addEventListener('click', () => {
                                 if (playerTwo[statToCompare] > playerOne[statToCompare]) {
                                         ++score;
-                                        alert('You Win!');
+                                        alert('Score +1');
                                 } else {
                                         score = 0;
-                                        alert('You Lose!');
+                                        alert('Game Over!');
                                 }
                                 fetchPlayers();
                                 });
