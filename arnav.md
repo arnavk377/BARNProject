@@ -87,6 +87,8 @@
                         <button class="score-box">
                                 <p>Your Score</p>
                                 <p id="score"></p>
+                        </button>
+                </div>
                 <script>
                         window.onload = fetchPlayers;
                         let score = 0;
@@ -96,6 +98,8 @@
                         const players = data;
                         const playerOne = players[Math.floor(Math.random() * players.length)];
                         const playerTwo = players[Math.floor(Math.random() * players.length)];
+                        console.log(playerOne);
+                        console.log(playerTwo);
                         if (playerOne === playerTwo) {
                                 playerTwo = players[Math.floor(Math.random() * players.length)];
                                 }
@@ -141,8 +145,6 @@
     }
 </script>
 
-
-
 <!--
 ## Map of the NFL
 ![](/images/teamsmap.webp)
@@ -170,7 +172,7 @@
         <button class="button" onclick="showae()" id="btnID"> AFC East </button>
         <button class="button" onclick="showaw()" id="btnID"> AFC West </button>
     </row>
-    <img class="image" src="{{ site.baseurl }}/images/ae.png" id="aeid">
+    <img class="image" src="images/ae.png" id="aeid">
     <img class="image" src="{{ site.baseurl }}/images/as.png" id="asid">
     <img class="image" src="{{ site.baseurl }}/images/aw.jpeg" id="awid">
     <img class="image" src="{{ site.baseurl }}/images/an.jpeg" id="anid">
