@@ -26,4 +26,5 @@
     <img src="{{ site.baseurl }}/images/download.jpg" alt="Field" class="center" width="1000px" 
      height="500px">
 </div>
+<p>To use our site, you learn a lot about sports. We have many features for use, like a quiz and game for NFL stats. Access them by selecting a name at the top. To log your favorite player, go to the "Favorite Player" tab to let everyone know.</p>
 </html>
