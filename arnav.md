@@ -90,24 +90,30 @@
                         </button>
                 </div>
                 <script>
+                        // Get players
                         window.onload = fetchPlayers;
                         let score = 0;
+                        // Get from API
                         async function fetchPlayers() {
                         const response = await fetch('https://barn.nighthawkcodingsociety.com/api/users/');
                         const data = await response.json();
                         const players = data;
+                        // Finding players
                         var playerOne = players[Math.floor(Math.random() * players.length)];
                         var playerTwo = players[Math.floor(Math.random() * players.length)];
+                        // Makes sure players don't match
                         while (playerOne === playerTwo) {
                                 playerTwo = players[Math.floor(Math.random() * players.length)];
                                 }
                         console.log(playerOne);
                         console.log(playerTwo);
+                        // Selects stat to compare
                         const statToCompare = ['atts', 'comps', 'tds', 'yards'][Math.floor(Math.random() * 4)];
                         document.getElementById("stat").textContent = statToCompare;
                         document.getElementById("score").textContent = score;
                         const buttonOne = document.createElement('button');
                         buttonOne.type = 'button';
+                        // Determines output
                         buttonOne.addEventListener('click', () => {
                                 if (playerOne[statToCompare] > playerTwo[statToCompare]) {
                                         ++score;
@@ -123,6 +129,7 @@
                         imgOne.alt = playerOne.name;
                         buttonOne.appendChild(imgOne);
                         const buttonTwo = document.createElement('button');
+                        // Determines output
                         buttonTwo.type = 'button';
                                 buttonTwo.addEventListener('click', () => {
                                 if (playerTwo[statToCompare] > playerOne[statToCompare]) {
