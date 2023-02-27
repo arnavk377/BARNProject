@@ -96,12 +96,12 @@
                         const response = await fetch('https://barn.nighthawkcodingsociety.com/api/users/');
                         const data = await response.json();
                         const players = data;
-                        const playerOne = players[Math.floor(Math.random() * players.length)];
-                        const playerTwo = players[Math.floor(Math.random() * players.length)];
+                        let playerOne = players[Math.floor(Math.random() * players.length)];
+                        let playerTwo = players[Math.floor(Math.random() * players.length)];
                         console.log(playerOne);
                         console.log(playerTwo);
                         if (playerOne === playerTwo) {
-                                playerTwo = players[Math.floor(Math.random() * players.length)];
+                                let playerTwo = players[Math.floor(Math.random() * players.length)];
                                 }
                         const statToCompare = ['atts', 'comps', 'tds', 'yards'][Math.floor(Math.random() * 4)];
                         document.getElementById("stat").textContent = statToCompare;
