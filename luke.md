@@ -39,6 +39,7 @@
   }
 }
 
+
 </style>
 <script>
 import React, {Component} from 'react';
