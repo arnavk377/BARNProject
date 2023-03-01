@@ -70,7 +70,7 @@
         </style>
         </head>
         <body>
-                <h1>Higher-Lower Game</h1>
+                <h1>Higher-Lower Interactive Game</h1>
                 <p>Click on the player you think has the higher statistic:</p>
                 <p id="stat"><p>
 		<div class="players">
