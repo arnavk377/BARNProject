@@ -1,6 +1,6 @@
-## [Link to Site](https://muffinman1287.github.io/BARNProject/)
+## [Link to Site](https://arnavk377.github.io/BARNProject/)
 
-## [Link to Flask](https://github.com/MuffinMan1287/BARNFlaskV2)
+## [Link to Flask](https://github.com/arnavk377/BARNFlaskV2)
 
 ## [Backend](barn.nighthawkcodingsociety.com)
 
